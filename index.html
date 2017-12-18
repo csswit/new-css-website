@@ -1,66 +1,98 @@
 <!doctype html>
 <html>
-    <head>
-        <title>CSS</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="bootstrap-iso.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-      <script src="bootstrap.min.js"></script>
-      <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
-    </head>
-    <body>
-      <div class="navbar">
-<button> Subscribe</button>
-<a href="" class="navlink">Contact</a>
-<a href="" class="navlink">News</a>
-<a href="" class="navlink">Meetings</a>
-<a href="" class="navlink">Projects</a>
-<input type="submit" id="secretbutton" onclick="document.getElementById('hidden').style.display = 'inline-block'; document.getElementById('hidden').style.position: absolute;"/>
-      </div>
-      <div class="bodyelements">
-        <div class="carousel">
 
-        </div>
-        <div class="rightpane">
-          <div class="aboutpane">
-            <h1>About Us</h1>
-            <p>
-              Basically we are the coolest club on
-campus in the history of forever.
-We are good at computers and stuff.
-Does anyone ever read placeholder
-text? I think dogs should vote. Dig this, dudes,
-there's so much room in this text box! woooaaaahh we could put so much stuff in here.
-            </p>
+<head>
+  <title>CSS</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-iso.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="navbar">
+      <button> Subscribe</button>
+      <a href="" class="navlink">Contact</a>
+      <a href="" class="navlink">News</a>
+      <a href="" class="navlink">Meetings</a>
+      <a href="" class="navlink">Projects</a>
+      <input type="submit" id="secretbutton" onclick="document.getElementById('hidden').style.display = 'inline-block'; document.getElementById('hidden').style.position: absolute;" />
+    </div>
+
+
+    <div class="bootstrap-iso">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="carouselSlide" style="background-color: green;"></div>
           </div>
-          <div class="socialpane">
-            <i id="icon" class="fab fa-facebook-square fa-3x"></i>
-      <i id="icon" class="fab fa-twitter-square fa-3x"></i>
-      <i id="icon" class="fab fa-instagram fa-3x"></i>
-      <i id="icon" class="fab fa-github fa-3x"></i>
+          <div class="item">
+            <div class="carouselSlide" style="background-color: yellow;"></div>
           </div>
-          <div class="meetingpane">
+          <div class="item">
+            <div class="carouselSlide" style="background-color: red;"></div>
           </div>
         </div>
-        <div class="newspane">
-        </div>
-
       </div>
-      <div class="eboardpane">
+    </div>
 
-        <img src="shawn.jpg" id="avatar">
-        <img src="coops.jpg" id="avatar">
-        <img src="corbin.jpg" id="avatar">
-        <img src="james.jpg" id="avatar">
-        <img src="soph.jpg" id="avatar">
-<img src="cool.jpg" id="hidden">
-      </div>
-      <div class="calendarpane">
+    <div class="aboutpane">
+      <h1>About Us</h1>
+      <p>
+        Basically we are the coolest club on campus in the history of forever. We are good at computers and stuff. Does anyone ever read placeholder text? I think dogs should vote. Dig this, dudes, there's so much room in this text box! woooaaaahh we could put
+        so much stuff in here.
+      </p>
+    </div>
+    <div class="socialpane">
+      <i id="socialicon" class="fab fa-facebook-square fa-3x"></i>
+      <i id="socialicon" class="fab fa-twitter-square fa-3x"></i>
+      <i id="socialicon" class="fab fa-instagram fa-3x"></i>
+      <i id="socialicon" class="fab fa-github fa-3x"></i>
+      <i id="socialicon" class="fab fa-slack-hash fa-3x"></i>
+    </div>
+    <div class="meetingpane">
 
-      </div>
+    </div>
+
+    <div class="newspane">
+
+    </div>
+
+  </div>
+
+  <div class=sect2>
+
+    <div class="eboardpane">
+      <img src="shawn.jpg" id="avatar">
+      <img src="coops.jpg" id="avatar">
+      <img src="corbin.jpg" id="avatar">
+      <img src="james.jpg" id="avatar">
+      <img src="soph.jpg" id="avatar">
+      <p class="title">Vice President</p>
+      <p class="title">Secretary</p>
+      <p class="title">PR</p>
+      <p class="title">President</p>
+      <p class="title">Tresurer</p>
+    </div>
+
+    <div class="calendarpane">
+
+    </div>
+  </div>
+
+</body>
 
 
-    </body>
+
 </html>
