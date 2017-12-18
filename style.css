@@ -1,0 +1,209 @@
+body{
+  background-color: #0278cb;
+    font-family: 'Roboto';
+    color: white;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+h1{
+    font-weight: 400;
+    font-style: italic;
+}
+
+h2{
+    font-weight: 300;
+    font-style: italic;
+}
+
+h3{
+    font-weight: 100;
+    font-style: italic;
+}
+
+p{
+    font-weight: 200;
+}
+
+a{
+    color:white;
+    text-decoration: underline;
+}
+
+a:hover{
+    text-decoration-color: #ff3b3b;
+}
+
+div{
+  background-color: none;
+  border-radius: 10px;
+}
+
+div.whitebox{
+    width: 20%;
+    height: 20%;
+    margin-top: 20px;
+    padding-top: 2px;
+    padding-left: 20px;
+    color: black;
+}
+
+div.bluebox{
+    width: 20%;
+    height: 20%;
+    margin-top: 20px;
+    padding-top: 2px;
+    padding-left: 20px;
+    background-color: none;
+    border-radius: 10px;
+    border: 1px dashed white;
+}
+
+button{
+    margin: 20px, 40px;
+    background-color: #ff3b3b;
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    border: none;
+    width: 135px;
+    height: 45px;
+    border-radius: 22.5px;
+    margin-right: 20px;
+}
+
+button:hover{
+    background-color: rgb(215, 19, 19);
+  }
+
+div.navbar{
+  float: left;
+  width: 100%;
+  height: 55px;
+  padding-top: 10px;
+  background-color: rgba(238,238,238,1);
+  position: fixed;
+  float: none;
+  border-radius: 0px;
+}
+
+div.navbar > * {
+  float: right;
+}
+
+a.navlink{
+  color: black;
+  font-size: 21px;
+  padding-right: 40px;
+  padding-top: 10px;
+  font-size: 21px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+div.bodyelements{
+  padding-top: 6%;
+  padding-left: 5%;
+  width: 90%;
+  border-radius: 0px;
+
+}
+
+div.carousel{
+  float: left;
+  width: 53%;
+  height: 400px;
+  background-color: white;
+  margin-bottom: 2%;
+}
+
+div.rightpane{
+  float: right;
+  width: 45%;
+  height: 400px;
+  background-color: none;
+  margin-bottom: 10%;
+}
+
+div.aboutpane{
+  width: 95%;
+  height: 305px;
+  padding-left: 5%;
+  background-color: none;
+  border-radius: 10px;
+  margin-bottom: 4%;
+  border: 1px dashed white;
+}
+
+div.socialpane{
+  width: 100%;
+  height: 70px;
+  background-color: none;
+  border: 1px solid white;
+  margin-bottom: 4%;
+}
+
+div.socialpane > *{
+  padding: 2% 3%;
+}
+
+div.newspane{
+  float: left;
+  width: 53%;
+  height: 400px;
+  background-color: white;
+  margin-bottom: 4%;
+}
+
+div.meetingpane{
+  float: right;
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  margin-bottom: 4%;
+}
+
+div.eboardpane{
+  float: right;
+  width: 100%;
+  height: 200px;
+  padding: 0px 0px;
+  padding-right: 10%;
+  background-color: white;
+  border-radius: 0px;
+}
+
+div.calendarpane{
+  float: right;
+  width: 100%;
+  height: 600px;
+  padding: 0px 0px;
+  background-color: rgba(228,228,228,1);
+  border-radius: 0px;
+}
+
+#avatar{
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 10%;
+  width:8%;
+  float: right;
+
+}
+
+#hidden{
+  margin-top: 56px;
+  margin-left: 10%;
+  float: right;
+
+  width:10%;
+  display: hidden;
+}
+
+#secretbutton{
+  width: 1px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  color: none;
+  font-size: 0px;
+}
