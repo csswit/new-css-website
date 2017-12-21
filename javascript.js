@@ -4,6 +4,8 @@ $(function() {
 
   var $postinfo = $('#postinfo');
 
+
+
   // var $postdesc = $('#postdesc');
 
   var data = {
@@ -15,6 +17,10 @@ $(function() {
       var output = '';
 
       var out1 = '';
+
+      var header = '<h2>Lastest News</h2>'
+
+      $postinfo.html(header);
 
       $.each(response.items, function(k, item) {
         var visibleSm;
@@ -47,7 +53,11 @@ $(function() {
 
         output += '<div class="blog-content"><h4><a href="' + item.link + '">' + item.title + '</a><h4>';
 
+        if (k == 0) {
+          var title = '<h3 id="newsheader">Latest News</h3><div class="blog-content"><a class="article" href="' + item.link + '">' + item.title + '</a>';
+        } else {
       var title = '<div class="blog-content"><a class="article" href="' + item.link + '">' + item.title + '</a>';
+        }
 
         output += '<div class="post-meta"><span>By ' + item.author + '</span></div>';
 
