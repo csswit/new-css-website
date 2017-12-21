@@ -36,7 +36,8 @@ h3 {
 }
 
 p {
-  font-weight: 200;
+  font-weight: 300;
+  margin: 0;
 }
 
 a {
@@ -129,9 +130,9 @@ div.bootstrap-iso {
 }
 
 div.aboutpane {
-  width: 95%;
+  width: 98%;
   height: 305px;
-  padding-left: 5%;
+  padding-left: 2%;
   background-color: none;
   border-radius: 10px;
   margin-bottom: 4%;
@@ -172,11 +173,40 @@ div.newspane {
   height: 400px;
   background-color: white;
   margin-bottom: 4%;
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, 100px);
+
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
 }
+
+.blog-content {
+  /* align-items: center; */
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+#postinfo {
+  /* justify-self: center; */
+  /* align-self: center; */
+  color: black;
+}
+
+.article {
+  color: black;
+}
+
+.author, .date {
+  display: inline;
+  font-size: 14px;
+}
+
+
+
 
 div.meetingpane {
   float: right;

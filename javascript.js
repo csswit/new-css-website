@@ -2,6 +2,10 @@ $(function() {
 
   var $content = $('#jsoncontent');
 
+  var $postinfo = $('#postinfo');
+
+  // var $postdesc = $('#postdesc');
+
   var data = {
     rss_url: 'https://medium.com/feed/hackwitus'
   };
@@ -9,6 +13,8 @@ $(function() {
   $.get('https://api.rss2json.com/v1/api.json', data, function(response) {
     if (response.status == 'ok') {
       var output = '';
+
+      var out1 = '';
 
       $.each(response.items, function(k, item) {
         var visibleSm;
@@ -25,6 +31,8 @@ $(function() {
 
         output += '<h4 class="date">' + moment(item.pubDate).format('MM/DD/YYYY') + "</h4>";
 
+      var date = '<div class="date"> ' + moment(item.pubDate).format('MM/DD/YYYY') + "</div>";
+
         var tagIndex = item.description.indexOf('<img');
 
         var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex;
@@ -39,11 +47,15 @@ $(function() {
 
         output += '<div class="blog-content"><h4><a href="' + item.link + '">' + item.title + '</a><h4>';
 
+      var title = '<div class="blog-content"><a class="article" href="' + item.link + '">' + item.title + '</a>';
+
         output += '<div class="post-meta"><span>By ' + item.author + '</span></div>';
+
+      var author = '<div class="author"> ~By '+ item.author + ',</div>';
 
         var yourString = item.description.replace(/<img[^>]*>/g,"");
 
-        yourString = yourString.replace(/<figcaption.*figcaption>/g,"");
+        yourString = yourString.replace(/<figure.*figure>/g,"");
 
         var maxLength = 120;
 
@@ -53,11 +65,22 @@ $(function() {
 
         output += '<p>' + trimmedString + '...</p>';
 
+      var description = trimmedString + '...</div>';
+
         output += '</div></div></div>';
+
+        out1 += title + author + date + description;
+
+        console.log(description)
 
         return k < 3;
       });
-      $content.html(output);
+
+      $postinfo.html(out1);
+
+      // $postdesc.html(out1);
+
+      // $content.html(output);
     }
   });
 
