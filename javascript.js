@@ -2,11 +2,8 @@ $(function() {
 
   var $content = $('#jsoncontent');
 
-  var $postinfo = $('#postinfo');
+  var $articlesnippet = $('#articlesnippet'); //id for latest news panel
 
-
-
-  // var $postdesc = $('#postdesc');
 
   var data = {
     rss_url: 'https://medium.com/feed/hackwitus'
@@ -14,13 +11,14 @@ $(function() {
 
   $.get('https://api.rss2json.com/v1/api.json', data, function(response) {
     if (response.status == 'ok') {
+
       var output = '';
 
-      var out1 = '';
+      var detailedoutput = '';
 
       var header = '<h2>Lastest News</h2>'
 
-      $postinfo.html(header);
+      $articlesnippet.html(header);
 
       $.each(response.items, function(k, item) {
         var visibleSm;
@@ -31,11 +29,11 @@ $(function() {
           visibleSm = ' visible-sm';
         }
 
-        output += '<div>';
+        detailedoutput += '<div>';
 
-        output += '<div class="blog-post"><header>';
+        detailedoutput += '<div class="blog-post"><header>';
 
-        output += '<h4 class="date">' + moment(item.pubDate).format('MM/DD/YYYY') + "</h4>";
+        detailedoutput += '<h4 class="date">' + moment(item.pubDate).format('MM/DD/YYYY') + "</h4>";
 
       var date = '<div class="date"> ' + moment(item.pubDate).format('MM/DD/YYYY') + "</div>";
 
@@ -49,9 +47,9 @@ $(function() {
 
         var src = item.description.substring(srcStart, srcEnd);
 
-        output += '<div class="blog-element"><img class="img-responsive" src="' + src + '" width="360px" height="240px"></div></header>';
+        detailedoutput += '<div class="blog-element"><img class="img-responsive" src="' + src + '" width="360px" height="240px"></div></header>';
 
-        output += '<div class="blog-content"><h4><a href="' + item.link + '">' + item.title + '</a><h4>';
+        detailedoutput += '<div class="blog-content"><h4><a href="' + item.link + '">' + item.title + '</a><h4>';
 
         if (k == 0) {
           var title = '<h3 id="newsheader">Latest News</h3><div class="blog-content"><a class="article" href="' + item.link + '">' + item.title + '</a>';
@@ -59,7 +57,7 @@ $(function() {
       var title = '<div class="blog-content"><a class="article" href="' + item.link + '">' + item.title + '</a>';
         }
 
-        output += '<div class="post-meta"><span>By ' + item.author + '</span></div>';
+        detailedoutput += '<div class="post-meta"><span>By ' + item.author + '</span></div>';
 
       var author = '<div class="author"> ~By '+ item.author + ',</div>';
 
@@ -73,24 +71,18 @@ $(function() {
 
         trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
 
-        output += '<p>' + trimmedString + '...</p>';
+        detailedoutput += '<p>' + trimmedString + '...</p>';
 
       var description = trimmedString + '...</div>';
 
-        output += '</div></div></div>';
+        detailedoutput += '</div></div></div>';
 
-        out1 += title + author + date + description;
-
-        console.log(description)
+        output += title + author + date + description;
 
         return k < 3;
       });
 
-      $postinfo.html(out1);
-
-      // $postdesc.html(out1);
-
-      // $content.html(output);
+      $articlesnippet.html(output);
     }
   });
 

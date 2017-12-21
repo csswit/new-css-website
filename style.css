@@ -46,7 +46,7 @@ a {
 }
 
 a:hover {
-  text-decoration-color: #ff3b3b;
+  /* text-decoration-color: #ff3b3b; */
 }
 
 div {
@@ -126,7 +126,8 @@ div.bootstrap-iso {
 }
 
 .carouselSlide {
-  height: 422px;
+  max-height: 422px;
+  width: 100%;
 }
 
 div.aboutpane {
@@ -169,7 +170,6 @@ div.socialpane>* {
 
 div.newspane {
   float: left;
-  /* width: 53%; */
   height: 400px;
   background-color: white;
   margin-bottom: 4%;
@@ -194,18 +194,11 @@ div.newspane {
 }
 
 .blog-content {
-  /* align-items: center; */
   margin-top: 25px;
   margin-left: 10px;
 }
 
-#postinfo {
-  /* justify-self: center; */
-  /* align-self: center; */
-  color: black;
-}
-
-.article {
+#articlesnippet, .article {
   color: black;
 }
 
@@ -213,9 +206,6 @@ div.newspane {
   display: inline;
   font-size: 14px;
 }
-
-
-
 
 div.meetingpane {
   float: right;
