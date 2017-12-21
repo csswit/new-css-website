@@ -86,7 +86,7 @@ $(function() {
         return k < 3;
       });
 
-      $postinfo.html(out1);
+      //$postinfo.html(out1);
 
       // $postdesc.html(out1);
 
