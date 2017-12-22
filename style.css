@@ -6,7 +6,7 @@ body {
   margin: 0px 0px;
 }
 
-.grid {
+.firstsection {
   display: grid;
   grid-template-columns: 6% 49% 2% 37% 6%;
   /* grid-template-rows: 65px 305px 95px 400px 200px 600px auto; */
@@ -16,8 +16,18 @@ body {
   margin-bottom: 22px;
 }
 
-.sect2 {
+.secondsection {
   display: grid;
+}
+
+.thirdsection {
+  display: grid;
+  /* grid-template-columns: 20% 30% 30% 20%;
+  grid-template-rows: 65px 305px 95px 400px;
+  grid-row-gap: 22px;
+  margin-bottom: 22px; */
+  grid-template-columns: 100%;
+  grid-template-rows: 400px 100px;
 }
 
 h1 {
@@ -127,6 +137,9 @@ div.bootstrap-iso {
 
 .carouselSlide {
   max-height: 422px;
+  min-height: 422px;
+  /* min-height: 422px */
+  min-width: 100%;
   width: 100%;
 }
 
@@ -138,7 +151,6 @@ div.aboutpane {
   border-radius: 10px;
   margin-bottom: 4%;
   border: 1px dashed white;
-
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 2;
@@ -149,10 +161,8 @@ div.socialpane {
   width: 100%;
   background-color: none;
   border: 1px solid white;
-
   display: grid;
   grid-template-columns: repeat(5, 20%);
-
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 3;
@@ -173,11 +183,9 @@ div.newspane {
   height: 400px;
   background-color: white;
   margin-bottom: 4%;
-
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 20px repeat(4, 95px);
-
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 4;
@@ -186,7 +194,6 @@ div.newspane {
 
 #newsheader {
   margin: 10px;
-
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -224,11 +231,9 @@ div.eboardpane {
   padding-bottom: 22px;
   background-color: white;
   border-radius: 0px;
-
   display: grid;
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: 159px 22px;
-
   grid-column-start: 1;
   grid-column-end: 6;
 }
@@ -256,11 +261,88 @@ div.calendarpane {
   padding: 0px 0px;
   background-color: rgba(228, 228, 228, 1);
   border-radius: 0px;
-
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 6;
   grid-row-end: 7;
+}
+
+#form {
+  display: grid;
+  grid-template-columns: 20% 30% 30% 20%;
+  grid-template-rows: 30px 40px 200px 45px;
+  grid-column-gap: 22px;
+  grid-row-gap: 22px;
+}
+
+#formname, #formemail, #formmessage {
+  border-radius: 10px;
+  border: none;
+  /* padding-top: 5px; */
+  padding-left: 10px;
+}
+
+#formname {
+  /* max-width: 310px; */
+  /* min-width: 30%; */
+  /* justify-self: center; */
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#formemail {
+  /* max-width: 310px; */
+  /* min-width: 30%; */
+  /* justify-self: center; */
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#formmessage {
+  padding-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#formsubmit {
+  min-width: 135px;
+  justify-self: center;
+  margin: 20px, 40px;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  border: none;
+  border-radius: 22.5px;
+  background-color: #ff3b3b;
+
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#formsubmit:hover {
+  background-color: #d71313;
+}
+
+.footer {
+background-color: white;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 #hidden {
