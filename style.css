@@ -2,33 +2,26 @@ body {
   background-color: #0278cb;
   font-family: 'Roboto';
   color: white;
-  padding: 0px 0px;
-  margin: 0px 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .firstsection {
   display: grid;
+
   grid-template-columns: 6% 49% 2% 37% 6%;
-  /* grid-template-rows: 65px 305px 95px 400px 200px 600px auto; */
   grid-template-rows: 65px 305px 95px 400px;
-  /* grid-column-gap: 22px; */
   grid-row-gap: 22px;
   margin-bottom: 22px;
 }
 
 .secondsection {
   display: grid;
-
-  /* grid-template-columns: repeat(5, 20%); */
-  /* grid-template-rows: 140px; */
 }
 
 .thirdsection {
   display: grid;
-  /* grid-template-columns: 20% 30% 30% 20%;
-  grid-template-rows: 65px 305px 95px 400px;
-  grid-row-gap: 22px;
-  margin-bottom: 22px; */
+
   grid-template-columns: 100%;
   grid-template-rows: 400px 100px;
 }
@@ -37,10 +30,7 @@ h1 {
   font-weight: 400;
   font-style: italic;
 }
-#contact {
-  grid-column-start: 9;
-  grid-column-end: 10;
-}
+
 h2 {
   font-weight: 300;
   font-style: italic;
@@ -59,10 +49,6 @@ p {
 a {
   color: white;
   text-decoration: underline;
-}
-
-a:hover {
-  /* text-decoration-color: #ff3b3b; */
 }
 
 div {
@@ -108,21 +94,16 @@ button:hover {
 }
 
 div.navbar {
-  /* float: left; */
   width: 100%;
   height: 65px;
-  /* padding-top: 10px; */
   background-color: rgba(238, 238, 238, 1);
   position: fixed;
-  /* float: none; */
   border-radius: 0px;
   z-index: 5;
   display: grid;
 
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: 65px;
-  /* grid-column-start: 1; */
-  /* grid-column-end: 5; */
 }
 
 #meetings {
@@ -145,6 +126,7 @@ div.navbar {
 }
 
 #meetings, #contact, #subscribe {
+  padding: 0;
   justify-self: center;
   align-self: center;
 }
@@ -170,18 +152,17 @@ div.bootstrap-iso {
 .carouselSlide {
   max-height: 422px;
   min-height: 422px;
-  /* min-height: 422px */
-  min-width: 100%;
+  /* min-width: 100%; */
   width: 100%;
 }
 
 div.aboutpane {
-  width: 98%;
-  height: 305px;
+  /* width: 98%; */
+  /* height: 305px; */
   padding-left: 2%;
-  background-color: none;
-  border-radius: 10px;
-  margin-bottom: 4%;
+  /* background-color: none; */
+  /* border-radius: 10px; */
+  /* margin-bottom: 4%; */
   border: 1px dashed white;
 
   grid-column-start: 4;
@@ -191,7 +172,7 @@ div.aboutpane {
 }
 
 div.socialpane {
-  width: 100%;
+  /* width: 100%; */
   background-color: none;
   border: 1px solid white;
   display: grid;
@@ -208,16 +189,16 @@ div.socialpane {
 }
 
 div.socialpane>* {
-  padding: 2% 3%;
+  /* padding: 2% 3%; */
 }
 
 div.newspane {
-  float: left;
-  height: 400px;
+  /* float: left; */
+  /* height: 400px; */
   background-color: white;
-  margin-bottom: 4%;
+  /* margin-bottom: 4%; */
   display: grid;
-  grid-template-columns: 100%;
+  /* grid-template-columns: 100%; */
   grid-template-rows: 20px repeat(4, 95px);
   grid-column-start: 2;
   grid-column-end: 3;
@@ -238,7 +219,7 @@ div.newspane {
   margin-left: 10px;
 }
 
-#articlesnippet, .article {
+#newscontent, .article {
   color: black;
 }
 
@@ -248,11 +229,11 @@ div.newspane {
 }
 
 div.meetingpane {
-  float: right;
-  width: 100%;
-  height: 400px;
+  /* float: right; */
+  /* width: 100%; */
+  /* height: 400px; */
   background-color: white;
-  margin-bottom: 4%;
+  /* margin-bottom: 4%; */
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 4;
@@ -265,7 +246,7 @@ div.meetingpane {
 }
 
 div.eboardpane {
-  padding: 0px 0px;
+  /* padding: 0px 0px; */
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: white;
@@ -273,15 +254,15 @@ div.eboardpane {
   display: grid;
 
   grid-template-columns: repeat(5, 20%);
-  grid-template-rows: 140px;
+  /* grid-template-rows: 140px; */
   grid-column-start: 1;
   grid-column-end: 6;
 }
 
 .membercard {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 115px;
+  /* grid-template-columns: 100%; */
+  /* grid-template-rows: 115px; */
   justify-self: center;
   align-self: center;
   text-align: center;
@@ -306,12 +287,13 @@ div.eboardpane {
 }
 
 div.calendarpane {
-  float: right;
-  width: 100%;
-  height: 600px;
-  padding: 0px 0px;
+  /* float: right; */
+  /* width: 100%; */
+  /* height: 600px; */
+  /* padding: 0px 0px; */
   background-color: rgba(228, 228, 228, 1);
-  border-radius: 0px;
+  border-radius: 0;
+
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 6;
@@ -320,6 +302,7 @@ div.calendarpane {
 
 #form {
   display: grid;
+
   grid-template-columns: 20% 30% 30% 20%;
   grid-template-rows: 30px 40px 200px 45px;
   grid-column-gap: 22px;
@@ -337,6 +320,7 @@ div.calendarpane {
   /* max-width: 310px; */
   /* min-width: 30%; */
   /* justify-self: center; */
+  margin-right: 5%;
 
   grid-column-start: 2;
   grid-column-end: 3;
@@ -348,6 +332,7 @@ div.calendarpane {
   /* max-width: 310px; */
   /* min-width: 30%; */
   /* justify-self: center; */
+  margin-right: 5%;
 
   grid-column-start: 3;
   grid-column-end: 4;
@@ -357,8 +342,8 @@ div.calendarpane {
 
 #formmessage {
   padding-top: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
 
   grid-column-start: 2;
   grid-column-end: 4;
@@ -388,7 +373,7 @@ div.calendarpane {
 }
 
 .footer {
-background-color: white;
+  background-color: white;
 
   grid-column-start: 1;
   grid-column-end: 2;
@@ -396,20 +381,21 @@ background-color: white;
   grid-row-end: 3;
 }
 
-#hidden {
-  margin-top: 56px;
-  margin-left: 10%;
-  float: right;
-  width: 10%;
-  display: hidden;
-}
+@media screen and (max-width: 1150px) {
+  #meetings {
+    grid-column-start: 6;
+    grid-column-end: 7;
+  }
 
-#secretbutton {
-  width: 1px;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  color: none;
-  font-size: 0px;
+  #contact {
+    grid-column-start: 7;
+    grid-column-end: 9;
+  }
+
+  #subscribe {
+    grid-column-start: 9;
+    grid-column-end: 11;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -419,8 +405,8 @@ background-color: white;
 
   .firstsection {
     grid-template-columns: 50% 50%;
+    grid-template-rows: 65px 55vh auto 12vh 450px 350px;
     grid-row-gap: 0;
-    grid-template-rows: 9vh 55vh 24vh 12vh 450px 350px;
   }
 
   div.navbar {
@@ -523,7 +509,7 @@ background-color: white;
   .firstsection {
     grid-template-columns: 50% 50%;
     grid-row-gap: 0;
-    grid-template-rows: 9vh 55vh 36vh 95px 450px 350px;
+    grid-template-rows: 65px 55vh auto 95px 450px 350px;
   }
 
   div.aboutpane {
