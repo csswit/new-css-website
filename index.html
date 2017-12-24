@@ -3,6 +3,7 @@
 
 <head>
   <title>CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="bootstrap-iso.css">
@@ -17,9 +18,9 @@
 <body>
   <div class="firstsection">
     <div class="navbar">
-      <button> Subscribe</button>
-      <a href="" class="navlink">Contact</a>
-      <a href="" class="navlink">Meetings</a>
+      <button id="subscribe"> Subscribe</button>
+      <a href="" class="navlink" id="contact">Contact</a>
+      <a href="" class="navlink" id="meetings">Meetings</a>
       <input type="submit" id="secretbutton" onclick="document.getElementById('hidden').style.display = 'inline-block'; document.getElementById('hidden').style.position: absolute;" />
     </div>
 
@@ -64,7 +65,7 @@
     </div>
 
     <div class="meetingpane">
-
+      <h3 id="meetingheader">Next Meeting</h3>
     </div>
 
     <div class="newspane" id="articlesnippet">
@@ -74,21 +75,31 @@
 
   <div class=secondsection>
     <div class="eboardpane">
-      <img src="shawn.jpg" id="avatar">
-      <img src="coops.jpg" id="avatar">
-      <img src="corbin.jpg" id="avatar">
-      <img src="james.jpg" id="avatar">
-      <img src="soph.jpg" id="avatar">
-      <p class="title">Vice President</p>
-      <p class="title">Secretary</p>
-      <p class="title">PR</p>
-      <p class="title">President</p>
-      <p class="title">Treasurer</p>
+      <div class="membercard">
+        <img src="shawn.jpg" id="avatar">
+        <p class="title">Vice President</p>
+      </div>
+      <div class="membercard">
+        <img src="coops.jpg" id="avatar">
+        <p class="title">Secretary</p>
+      </div>
+      <div class="membercard">
+        <img src="corbin.jpg" id="avatar">
+        <p class="title">PR</p>
+      </div>
+      <div class="membercard">
+        <img src="james.jpg" id="avatar">
+        <p class="title">President</p>
+      </div>
+      <div class="membercard" id="lastmembercard">
+        <img src="soph.jpg" id="avatar">
+        <p class="title">Treasurer</p>
+      </div>
     </div>
 
-    <div class="calendarpane">
+    <!-- <div class="calendarpane">
 
-    </div>
+    </div> -->
   </div>
 
   <div class="thirdsection">

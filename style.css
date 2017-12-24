@@ -18,6 +18,9 @@ body {
 
 .secondsection {
   display: grid;
+
+  /* grid-template-columns: repeat(5, 20%); */
+  /* grid-template-rows: 140px; */
 }
 
 .thirdsection {
@@ -34,7 +37,10 @@ h1 {
   font-weight: 400;
   font-style: italic;
 }
-
+#contact {
+  grid-column-start: 9;
+  grid-column-end: 10;
+}
 h2 {
   font-weight: 300;
   font-style: italic;
@@ -102,19 +108,49 @@ button:hover {
 }
 
 div.navbar {
-  float: left;
+  /* float: left; */
   width: 100%;
-  height: 55px;
-  padding-top: 10px;
+  height: 65px;
+  /* padding-top: 10px; */
   background-color: rgba(238, 238, 238, 1);
   position: fixed;
-  float: none;
+  /* float: none; */
   border-radius: 0px;
   z-index: 5;
+  display: grid;
+
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: 65px;
+  /* grid-column-start: 1; */
+  /* grid-column-end: 5; */
+}
+
+#meetings {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#contact {
+  grid-column-start: 9;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#subscribe {
+  grid-column-start: 10;
+  grid-column-end: 11;
+}
+
+#meetings, #contact, #subscribe {
+  justify-self: center;
+  align-self: center;
 }
 
 div.navbar>* {
-  float: right;
+  /* float: right; */
 }
 
 a.navlink {
@@ -227,32 +263,50 @@ div.meetingpane {
   grid-row-end: 5;
 }
 
+#meetingheader {
+  color: black;
+  padding-left: 10px;
+}
+
 div.eboardpane {
   padding: 0px 0px;
-  padding-bottom: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: white;
   border-radius: 0px;
   display: grid;
+
   grid-template-columns: repeat(5, 20%);
-  grid-template-rows: 159px 22px;
+  grid-template-rows: 140px;
   grid-column-start: 1;
   grid-column-end: 6;
 }
 
-#avatar {
-  border-radius: 50%;
-  margin-top: 30px;
-  width: 60%;
-  max-width: 115px;
+.membercard {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 115px;
   justify-self: center;
   align-self: center;
+  text-align: center;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+}
+
+#avatar {
+  border-radius: 50%;
+  /* margin-top: 30px; */
+  /* width: 60%; */
+  max-width: 115px;
+  /* justify-self: center; */
+  /* align-self: center; */
 }
 
 .title {
   color: black;
-  text-align: center;
-  justify-self: center;
-  align-self: center;
+  /* text-align: center; */
+  /* justify-self: center; */
+  /* align-self: center; */
 }
 
 div.calendarpane {
@@ -364,21 +418,39 @@ background-color: white;
 
 @media screen and (max-width: 768px) {
   .firstsection {
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
     grid-row-gap: 0;
-    grid-template-rows: 9vh 55vh 24vh 12vh 400px;
-    /* grid-template-rows: 65px 422px 250px 400px; */
+    grid-template-rows: 9vh 55vh 24vh 12vh 450px 350px;
   }
 
   div.navbar {
     height: 9vh;
     padding-top: 0;
+
+    grid-template-columns: 33% auto 33%;
+    grid-template-rows: 9vh;
+  }
+
+  #meetings {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #contact {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  #subscribe {
+    grid-column-start: 3;
+    grid-column-end: 4;
   }
 
   div.bootstrap-iso {
     height: 55vh;
+
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
   }
@@ -392,22 +464,55 @@ background-color: white;
     height: 24vh;
 
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
   }
 
   div.socialpane {
     height: 12vh;
-    /* width: 100%; */
-    /* background-color: none; */
-    /* border: 1px solid white; */
-    /* display: grid; */
-    /* grid-template-columns: repeat(5, 20%); */
+
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
+  }
+
+  div.newspane {
+    height: 450px;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  div.meetingpane {
+    height: 372px;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+
+  div.eboardpane {
+    grid-template-columns: 50% 50%;
+  }
+
+  #lastmembercard {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  #form {
+    /* display: grid; */
+    grid-template-columns: 10% 40% 40% 20%;
+    grid-template-rows: 30px 40px 200px 45px;
+    grid-column-gap: 11px;
+    grid-row-gap: 22px;
   }
 
 }
