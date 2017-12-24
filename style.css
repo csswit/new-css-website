@@ -425,6 +425,7 @@ background-color: white;
 
   div.navbar {
     height: 9vh;
+    min-height: 58px;
     padding-top: 0;
 
     grid-template-columns: 33% auto 33%;
