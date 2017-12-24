@@ -149,10 +149,6 @@ div.navbar {
   align-self: center;
 }
 
-div.navbar>* {
-  /* float: right; */
-}
-
 a.navlink {
   color: black;
   font-size: 21px;
@@ -417,6 +413,10 @@ background-color: white;
 }
 
 @media screen and (max-width: 768px) {
+  div {
+    border-radius: 0;
+  }
+
   .firstsection {
     grid-template-columns: 50% 50%;
     grid-row-gap: 0;
@@ -424,12 +424,12 @@ background-color: white;
   }
 
   div.navbar {
-    height: 9vh;
+    /* height: 9vh; */
     min-height: 58px;
     padding-top: 0;
 
     grid-template-columns: 33% auto 33%;
-    grid-template-rows: 9vh;
+    /* grid-template-rows: 9vh; */
   }
 
   #meetings {
@@ -463,6 +463,7 @@ background-color: white;
 
   div.aboutpane {
     height: 24vh;
+    border: none;
 
     grid-column-start: 1;
     grid-column-end: 3;
