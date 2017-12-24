@@ -517,3 +517,19 @@ background-color: white;
   }
 
 }
+
+@media screen and (max-width: 730px) {
+  .firstsection {
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 0;
+    grid-template-rows: 9vh 55vh 36vh 95px 450px 350px;
+  }
+
+  div.aboutpane {
+    height: 36vh;
+  }
+
+  div.socialpane {
+    height: 95px;
+  }
+}
