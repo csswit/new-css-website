@@ -23,7 +23,7 @@ body {
   display: grid;
 
   grid-template-columns: 100%;
-  grid-template-rows: 400px 100px;
+  grid-template-rows: 400px 50px;
 }
 
 h1 {
@@ -106,14 +106,14 @@ div.navbar {
   grid-template-rows: 65px;
 }
 
-#meetings {
+#navbarMeetings {
   grid-column-start: 8;
   grid-column-end: 9;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-#contact {
+#navbarContact {
   grid-column-start: 9;
   grid-column-end: 10;
   grid-row-start: 1;
@@ -125,7 +125,7 @@ div.navbar {
   grid-column-end: 11;
 }
 
-#meetings, #contact, #subscribe {
+#navbarMeetings, #navbarContact, #subscribe {
   padding: 0;
   justify-self: center;
   align-self: center;
@@ -395,12 +395,12 @@ div.calendarpane {
 }
 
 @media screen and (max-width: 1150px) {
-  #meetings {
+  #navbarMeetings {
     grid-column-start: 6;
     grid-column-end: 7;
   }
 
-  #contact {
+  #navbarContact {
     grid-column-start: 7;
     grid-column-end: 9;
   }
@@ -431,12 +431,12 @@ div.calendarpane {
     /* grid-template-rows: 9vh; */
   }
 
-  #meetings {
+  #navbarMeetings {
     grid-column-start: 1;
     grid-column-end: 2;
   }
 
-  #contact {
+  #navbarContact {
     grid-column-start: 2;
     grid-column-end: 3;
   }
