@@ -15,8 +15,8 @@ function start() {
           'singleEvents': true
         });
       }).then(function(response) {
-        var eventTitle = JSON.stringify(response.result.items[0].summary).replace(/['"]+/g, '');
-        var description = JSON.stringify(response.result.items[0].description).replace(/['"]+/g, '');
+        var eventTitle = JSON.stringify(response.result.items[0].summary).replace(/["]+/g, '');
+        var description = JSON.stringify(response.result.items[0].description).replace(/["]+/g, '');
         var time = JSON.stringify(response.result.items[0].start.dateTime);
 
         document.getElementById('event').innerHTML = eventTitle;
