@@ -1,28 +1,12 @@
+const dotenv = require('dotenv');
+dotenv.load();
+
+var apiKey = process.env.APIKEY;
+
 function start() {
-<<<<<<< HEAD
-  // 2. Initialize the JavaScript client library.
-  gapi.client.init({
-    'apiKey': 'AIzaSyDX1NIXf8-dc7ZC4XXcipbrZgow59MsAfQ',
-    // Your API key will be automatically added to the Discovery Document URLs.
-    'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'],
-    // clientId and scope are optional if auth is not required.
-    'clientId': '208833000673-uig4334e1lcbg4dhb9krfnfq2atdruae.apps.googleusercontent.com',
-    'scope': 'profile',
-  }).then(function() {
-    // 3. Initialize and make the API request.
-    return gapi.client.calendar.events.list({
-      'calendarId': 'wentworthcsa@wit.edu',
-      'orderBy': "startTime",
-      'singleEvents': true
-    });
-  }).then(function(response) {
-    var eventTitle = JSON.stringify(response.result.items[0].summary).replace(/['"]+/g, '');
-    var description = JSON.stringify(response.result.items[0].description).replace(/['"]+/g, '');
-    var time = JSON.stringify(response.result.items[0].start.dateTime);
-=======
       // 2. Initialize the JavaScript client library.
       gapi.client.init({
-        'apiKey': 'AIzaSyDX1NIXf8-dc7ZC4XXcipbrZgow59MsAfQ',
+        'apiKey': apiKey,
         // Your API key will be automatically added to the Discovery Document URLs.
         'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'],
         // clientId and scope are optional if auth is not required.
@@ -39,7 +23,6 @@ function start() {
         var eventTitle = JSON.stringify(response.result.items[0].summary).replace(/["]+/g, '');
         var description = JSON.stringify(response.result.items[0].description).replace(/["]+/g, '');
         var time = JSON.stringify(response.result.items[0].start.dateTime);
->>>>>>> ca3cfb46b7eafa87ece8e8b43fd36f4baa3c84d0
 
     document.getElementById('event').innerHTML = eventTitle;
     document.getElementById('description').innerHTML = description;

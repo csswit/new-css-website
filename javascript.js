@@ -31,11 +31,11 @@ $(function() {
           var title = '<div class="blog-content"><a class="article" href="' + item.link + '">' + item.title + '</a>';
         }
 
-        var author = '<div class="author"> ~By '+ item.author + ',</div>';
+        var author = '<div class="author"> ~By ' + item.author + ',</div>';
 
-        var yourString = item.description.replace(/<img[^>]*>/g,"");
+        var yourString = item.description.replace(/<img[^>]*>/g, "");
 
-        yourString = yourString.replace(/<figure.*figure>/g,"");
+        yourString = yourString.replace(/<figure.*figure>/g, "");
 
         var maxLength = 120;
 
@@ -55,25 +55,20 @@ $(function() {
 });
 
 
-$(document).ready(function(){
+$(document).ready(function() {
   // Add smooth scrolling to all links
   $('a[href*=#]:not([href=#]):not([href=#collapse1]):not([href=#collapse2]):not([href=#collapse3]):not([href=#collapse4]):not([href=#collapse5]):not([href=#collapse6]):not([href=#collapse7]):not([href=#collapse8])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-        || location.hostname == this.hostname) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') ||
+      location.hostname == this.hostname) {
 
-        let target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 scrollTop: target.offset().top - 80
-            }, 500);
-            return false;
-        }
+      let target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 80
+        }, 500);
+        return false;
+      }
     }
-});
-
-// var title = document.getElementsByClassName('calendar-container')
-// var title = document.getElementById('bubbleContent:1').getElementsByClassName('title');
-// console.log(title)
-
+  });
 });
