@@ -106,6 +106,13 @@ div.navbar {
   grid-template-rows: 65px;
 }
 
+#clubname {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
 #navbarMeetings {
   grid-column-start: 8;
   grid-column-end: 9;
