@@ -71,4 +71,9 @@ $(document).ready(function(){
         }
     }
 });
+
+// var title = document.getElementsByClassName('calendar-container')
+// var title = document.getElementById('bubbleContent:1').getElementsByClassName('title');
+// console.log(title)
+
 });
