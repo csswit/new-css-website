@@ -5,7 +5,7 @@ function start() {
         // Your API key will be automatically added to the Discovery Document URLs.
         'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'],
         // clientId and scope are optional if auth is not required.
-        'clientId': '208833000673-uig4334e1lcbg4dhb9krfnfq2atdruae.apps.googleusercontent.com',
+        'clientId': '208833000673-qkfrncgkctrhfp0tbvbb0lefbv1ibt2n.apps.googleusercontent.com',
         'scope': 'profile',
       }).then(function() {
         // 3. Initialize and make the API request.
