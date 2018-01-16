@@ -327,7 +327,7 @@ div.eboardpane {
   display: grid;
 
   grid-template-columns: repeat(5, 20%);
-  /* grid-template-rows: 140px; */
+  grid-template-rows: 180px;
   grid-column-start: 1;
   grid-column-end: 6;
 }
@@ -480,7 +480,7 @@ div.calendarpane {
 
   .firstsection {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 65px 55vh auto 12vh 450px 350px;
+    grid-template-rows: 65px 55vh auto 12vh 450px 120px;
     grid-row-gap: 0;
   }
 
@@ -588,11 +588,12 @@ div.calendarpane {
   .firstsection {
     grid-template-columns: 50% 50%;
     grid-row-gap: 0;
-    grid-template-rows: 65px 55vh auto 95px 450px 350px;
+    grid-template-rows: 65px 55vh auto 95px 450px 120px;
   }
 
   div.aboutpane {
-    height: 36vh;
+    height: 40%;
+    padding-bottom: 10px;
   }
 
   div.socialpane {
