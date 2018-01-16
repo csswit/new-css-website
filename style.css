@@ -522,12 +522,18 @@ div.calendarpane {
   }
 
   .carouselSlide {
+    max-width: 90%;
+    padding-left: 10%;
+  }
+
+  .carouselSlide {
     max-height: 55vh;
     min-height: 55vh;
   }
 
   div.aboutpane {
-    height: 24vh;
+    height: 40%;
+    padding-bottom: 10px;
     border: none;
 
     grid-column-start: 1;
