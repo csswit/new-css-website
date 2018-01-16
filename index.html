@@ -26,8 +26,8 @@
       <a href="#contact" class="navlink" id="navbarContact">Contact</a>
       <a href="#meetings" class="navlink" id="navbarMeetings">Meetings</a>
       <!-- <div id="clubname"> -->
-        <img id="logo" src="logo.svg" alt="club logo">
-        <a id="clubname" style="color: black">WitCSS</a>
+      <img id="logo" src="logo.svg" alt="club logo">
+      <a id="clubname" style="color: black">WitCSS</a>
       <!-- </div> -->
 
     </div>
@@ -85,15 +85,61 @@
 
   <div class=secondsection>
     <div class="eboardpane">
-      <div class="membercard">
+      <!-- <div class="membercard">
         <img src="james.jpg" id="avatar">
         <p class="title">President</p>
+      </div> -->
+
+      <div class=membercard>
+        <div class="team-img-container" data-content="James Coyne">
+          <a href="https://www.linkedin.com/in/james-coyne/" target="_blank">
+            <img class="team-img" src="james.jpg" alt="">
+          </a>
+          <p class="title">President</p>
+        </div>
       </div>
-      <div class="membercard">
+
+      <div class=membercard>
+        <div class="team-img-container" data-content="Shawn Toubeau">
+          <a href="https://www.linkedin.com/in/shawn-toubeau/" target="_blank">
+            <img class="team-img" src="shawn.jpg" alt="">
+          </a>
+          <p class="title">Vice President</p>
+        </div>
+      </div>
+
+      <div class=membercard>
+        <div class="team-img-container" data-content="Sophia Seltenreich">
+          <a href="https://www.linkedin.com/in/sophia-seltenreich/" target="_blank">
+            <img class="team-img" src="soph.jpg" alt="">
+          </a>
+          <p class="title">Treasurer</p>
+        </div>
+      </div>
+
+      <div class=membercard>
+        <div class="team-img-container" data-content="Alyssa Cooper">
+          <a href="https://www.linkedin.com/in/alyssa-cooper-2482b0138/" target="_blank">
+            <img class="team-img" src="coops.jpg" alt="">
+          </a>
+          <p class="title">Secretary</p>
+        </div>
+      </div>
+
+      <div class=membercard id="lastmembercard">
+        <div class="team-img-container" data-content="Corbin Hackimian">
+          <a href="https://www.linkedin.com/in/corbin-hakimian-55618314b/" target="_blank">
+            <img class="team-img" src="corbin.jpg" alt="">
+          </a>
+          <p class="title">President</p>
+        </div>
+      </div>
+
+      <!-- <div class="membercard">
         <img src="shawn.jpg" id="avatar">
         <p class="title">Vice President</p>
-      </div>
-      <div class="membercard">
+      </div> -->
+      <!-- <div class="membercard">
         <img src="soph.jpg" id="avatar">
         <p class="title">Treasurer</p>
       </div>
@@ -104,7 +150,7 @@
       <div class="membercard" id="lastmembercard">
         <img src="corbin.jpg" id="avatar">
         <p class="title">PR</p>
-      </div>
+      </div> -->
     </div>
 
     <div class="calendarpane">
@@ -120,7 +166,7 @@
       <input id="formemail" type="email" name="email" placeholder="Email" required />
       <textarea id="formmessage" name="message" placeholder="Questions/Comments?" required></textarea>
       <input id="formsubmit" type="submit" value="Send" />
-      <input type="hidden" name="_next" value="csswit.club/thanks.html" />
+      <input type="hidden" name="_next" value="/thanks.html" />
     </form>
 
     <footer class="footer">

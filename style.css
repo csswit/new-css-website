@@ -594,3 +594,66 @@ div.calendarpane {
     height: 95px;
   }
 }
+
+
+.memberTitle {
+  font-size: 20px;
+}
+
+.team-img-container {
+  position: relative;
+  /*   VALUE FOR IMAGE WIDTH */
+  width: 115px;
+  /*   VALUE FOR OVERLAY HEIGHT */
+  height: 115px;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+img.team-img {
+  /*   VALUE FOR IMAGE HEIGHT */
+  height: 115px;
+  width: 100%;
+}
+
+.team-img-container, .team-img {
+  vertical-align: top;
+  border-radius: 50%;
+}
+
+.team-img-container:after, .team-img-container:before {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.team-img-container:after {
+  content: '\A';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.team-img-container:before {
+  content: attr(data-content);
+  width: 100%;
+  color: #fff;
+  z-index: 1;
+  bottom: 40%;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  pointer-events: none;
+}
+
+.team-img-container:hover:after, .team-img-container:hover:before {
+  opacity: 1;
+}
