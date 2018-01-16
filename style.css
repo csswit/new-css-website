@@ -508,6 +508,10 @@ div.calendarpane {
     grid-column-end: 4;
   }
 
+  #clubname, #logo {
+    display: none;
+  }
+
   div.bootstrap-iso {
     height: 55vh;
 
