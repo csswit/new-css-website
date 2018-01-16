@@ -107,6 +107,16 @@ div.navbar {
 }
 
 #clubname {
+  color: black;
+  font-size: 21px;
+  padding-right: 40px;
+  padding-top: 10px;
+  font-size: 21px;
+  font-weight: 300;
+  text-decoration: none;
+  justify-self: center;
+  align-self: center;
+
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -138,7 +148,7 @@ div.navbar {
   align-self: center;
 }
 
-a.navlink, #clubname {
+a.navlink {
   color: black;
   font-size: 21px;
   padding-right: 40px;
