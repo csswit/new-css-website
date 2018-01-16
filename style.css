@@ -132,13 +132,13 @@ div.navbar {
   grid-column-end: 11;
 }
 
-#navbarMeetings, #navbarContact, #subscribe {
+#navbarMeetings, #navbarContact, #subscribe, #clubname {
   padding: 0;
   justify-self: center;
   align-self: center;
 }
 
-a.navlink {
+a.navlink, #clubname {
   color: black;
   font-size: 21px;
   padding-right: 40px;
