@@ -521,7 +521,7 @@ div.calendarpane {
     grid-row-end: 3;
   }
 
-  .carouselSlide {
+  .carousel-inner {
     max-width: 90%;
     padding-left: 10%;
   }
