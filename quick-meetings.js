@@ -26,6 +26,7 @@
       document.getElementById('time').innerHTML = extractTime(time);
     }).catch((err) => {
       console.log(err);
+      console.log(JSON.stringify(err));
     })
   };
 
