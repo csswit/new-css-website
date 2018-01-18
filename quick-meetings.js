@@ -15,7 +15,8 @@
         'singleEvents': true
       });
     }).then(function(response) {
-      //var eventTitle = JSON.stringify(response.result.items[0].summary).replace(/["]+/g, '');
+      var eventTitle2 = JSON.stringify(response.result.items[0].summary).replace(/["]+/g, '');
+      console.log(eventTitle2)
       var eventTitle = JSON.stringify(response.result.items[0].summary);
       //var description = JSON.stringify(response.result.items[0].description).replace(/["]+/g, '');
       var description = JSON.stringify(response.result.items[0].description);
