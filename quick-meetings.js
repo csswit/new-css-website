@@ -19,6 +19,8 @@
       var description = JSON.stringify(response.result.items[0].description).replace(/["]+/g, '');
       var time = JSON.stringify(response.result.items[0].start.dateTime);
 
+      console.log(JSON.stringify(response.result))
+      
       document.getElementById('event').innerHTML = eventTitle;
       document.getElementById('description').innerHTML = description;
       document.getElementById('time').innerHTML = extractTime(time);
