@@ -16,13 +16,8 @@
       });
     }).then(function(response) {
       var eventTitle = JSON.stringify(response.result.items[0].summary).replace(/["]+/g, '');
-      //console.log(eventTitle)
-      //var eventTitle = JSON.stringify(response.result.items[0].summary);
       var description = JSON.stringify(response.result.items[0].description).replace(/["]+/g, '');
-      //var description = JSON.stringify(response.result.items[0].description);
       var time = JSON.stringify(response.result.items[0].start.dateTime);
-
-      console.log(JSON.stringify(response.result))
       
       document.getElementById('event').innerHTML = eventTitle;
       document.getElementById('description').innerHTML = description;
